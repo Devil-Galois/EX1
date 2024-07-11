@@ -240,6 +240,7 @@ int main(void)
 				TM1637ShowOne(1,__Receive[1]);
 				TM1637ShowOne(2,__Receive[2]);
 				TM1637ShowOne(3,__Receive[3]);
+				RECEIVE_Start=0;
 			}
 			else 																										//校验失败START重置为0   重新采集
 			{
@@ -253,6 +254,7 @@ int main(void)
 			TM1637_Clear();
 			cnt=0;
 			RECEIVE_Start=0;
+			RECEIVE_Finish=0;
 		}
 		if(KEY_RECEIVE)
 		{
