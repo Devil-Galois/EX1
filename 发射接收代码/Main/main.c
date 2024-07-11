@@ -252,6 +252,7 @@ int main(void)
 		{
 			TM1637_Clear();
 			cnt=0;
+			RECEIVE_Start=0;
 		}
 		if(KEY_RECEIVE)
 		{
